@@ -3,6 +3,8 @@ package com.fabiolsc.listadecontatos.feature.listacontatos
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.fabiolsc.listadecontatos.R
