@@ -25,8 +25,8 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setupToolBar(toolBar, "Lista de contatos",false)
-        setupListView()
+        setupToolBar(toolBar, "Contatos",false)
+        setupRecycleView()
         setupOnClicks()
     }
 
@@ -35,7 +35,7 @@ class MainActivity : BaseActivity() {
         ivBuscar.setOnClickListener { onClickBuscar() }
     }
 
-    private fun setupListView(){
+    private fun setupRecycleView(){
         recyclerView.layoutManager = LinearLayoutManager(this)
     }
 

@@ -12,7 +12,7 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolBar"
             app:titleTextColor="#FFFFFF"
-            android:background="#707070"
+            android:background="#1E1E1E"
             android:elevation="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -20,19 +20,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             android:padding="16dp"
-            android:orientation="vertical">
+            android:background="#0d1117">
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:background="#616161"
-                android:orientation="vertical">
+                android:background="#1E1E1E"
+                android:orientation="vertical"
+                android:padding="16dp">
+
                 <TextView
-                    android:textColor="#FFFFFF"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nome contato:"/>
+                    android:text="Nome contato:"
+                    android:textColor="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/etNome"
@@ -44,38 +48,41 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
                 android:layout_marginTop="16dp"
-                android:background="#616161"
-                android:orientation="vertical">
+                android:background="#1E1E1E"
+                android:orientation="vertical"
+                android:padding="16dp">
+
                 <TextView
-                    android:textColor="#FFFFFF"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Número de telefone:"/>
+                    android:text="Número de telefone:"
+                    android:textColor="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/etTelefone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="phone"/>
+                    android:inputType="phone" />
 
             </LinearLayout>
 
             <Button
                 android:id="@+id/btnSalvarConato"
-                android:text="Salvar contato"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#1E1E1E"
+                android:text="Salvar contato" />
 
             <Button
                 android:id="@+id/btnExcluirContato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:onClick="onClickExcluirContato"
                 android:text="Excluir contato"
-                android:layout_marginTop="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:background="#1E1E1E"/>
         </LinearLayout>
 
     </LinearLayout>

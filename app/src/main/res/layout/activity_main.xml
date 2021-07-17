@@ -9,18 +9,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolBar"
-            app:titleTextColor="#FFFFFF"
-            android:background="#707070"
-            android:elevation="4dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="#1E1E1E"
+            android:elevation="4dp"
+            android:textAlignment="center"
+            app:titleTextColor="#FFFFFF" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:background="#676767">
+            android:background="#1E1E1E">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -33,16 +35,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
+
             <ImageView
                 android:id="@+id/ivBuscar"
-                android:layout_marginLeft="5dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_search_category_default" />
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:src="@android:drawable/ic_menu_search" />
         </LinearLayout>
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:background="#0d1117">
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
